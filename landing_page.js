@@ -6,7 +6,7 @@ const subButton = document.getElementById("button")
 
 function userNameValidation(entry) {
   if (entry === "" || entry.length < 4){
-    alert("Must be longer than 4 characters!");
+    badName.textContent = "Must be longer than 4 characters!"
     return false;
   }
   return true;
