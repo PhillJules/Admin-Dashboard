@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Login</title>
   <link rel="stylesheet" href="./landing_page.css">
-  <script src="./landing_page.js"></script>
+  <script src="./landing_page.js" defer></script>
 </head>
 <body>
   <div class="container">
@@ -15,12 +15,14 @@
         <div class="input_field">
           <label for="username">Username: </label>
           <input type="text" name="username" id="username" required>
+          <span id ="bad_name"></span>
         </div>
         <div class="input_field">
           <label for="password">Password: </label>
           <input type="password" name="password" id="password" required>
+          <spanc id ="bad_password"></span>
         </div>
-        <button type="submit">Login</button>
+        <button type="submit" id="button" >Login</button>
       </form>
     </div>
   </div>
