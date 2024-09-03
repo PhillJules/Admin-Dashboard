@@ -1,0 +1,8 @@
+.top_nav {
+    display: grid;
+    grid-template-columns: 2fr 1fr;     
+}
+
+h3 {
+    display: inline;
+}
