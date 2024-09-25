@@ -3,6 +3,12 @@
     grid-template-columns: 2fr 1fr;     
 }
 
+.notification {
+    display: flex;
+    justify-content: space-evenly;    
+    
+}
+
 h3 {
     display: inline;
 }

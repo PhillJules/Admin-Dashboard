@@ -5,7 +5,7 @@ const badName = document.getElementById("bad_name")
 const subButton = document.getElementById("button")
 
 function userNameValidation(entry) {
-  if (entry === "" || entry.length < 4){
+  if (entry === "" || entry.length <= 4){
     badName.textContent = "Must be longer than 4 characters!"
     return false;
   }
@@ -13,7 +13,7 @@ function userNameValidation(entry) {
 }
 
 function passwordValidation(secret){
-  if (secret === "" || secret.length < 4){
+  if (secret === "" || secret.length <= 4){
     badPassword.textContent = "Must be longer than 4 characters!"
     return false;
   }
