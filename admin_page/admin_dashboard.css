@@ -11,7 +11,7 @@
 
 
 .sidebar {
-    border: solid 2px black;;
+    border: solid 2px black;
     grid-area: sidebar;
 }
 
@@ -21,6 +21,7 @@
     align-items: center;
     /* justify-content: start; */
     gap: .5rem;
+    padding-left: 1rem;
 }
 
 .main_content {
@@ -29,10 +30,58 @@
 }
 
 .header {
+    display: grid;
+    grid-template-rows: auto auto;
     border: solid 2px black;;
     grid-area: header;
 }
 
+.top_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    /* gap: 2rem; */
+    border: solid 2px black;
+    
+}
+
+.search_area {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+
+}
+
+.user_info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-right: 1rem;
+
+}
+
+.greeting{
+    /* grid-area: greeting-area; */
+}
+
+.buttons {
+    /* grid-area: button-area; */
+}
+
 ul {
   list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar_links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: stretch;
+  justify-content: space-around;
 }
